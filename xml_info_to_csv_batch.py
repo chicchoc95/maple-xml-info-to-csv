@@ -45,9 +45,8 @@ def process_directory_to_single_csv(dir_path: Path, output_csv: Path):
 
     print(f"[INFO] Found {len(xml_files)} XML file(s) in {dir_path}")
 
-    # 전체 헤더(항목 이름)와 각 XML의 값들 저장
-    header_keys = []   # bodyAttack, level, ...
-    rows = []          # (id, info_dict)
+    header_keys = []
+    rows = []
 
     for xml_path in xml_files:
         try:
@@ -56,47 +55,42 @@ def process_directory_to_single_csv(dir_path: Path, output_csv: Path):
             print(f"[WARN] Skipping {xml_path.name}: {e}")
             continue
 
-        # 전역 헤더 리스트에 없던 키가 나오면 뒤에 추가
         for k in keys_in_order:
             if k not in header_keys:
                 header_keys.append(k)
 
-        stem = xml_path.stem            # "Mob.0100100.img"
-parts = stem.split(".")         # ["Mob", "0100100", "img"]
-mob_id = parts[1]               # "0100100"
+        # ---------- 파일명에서 0100100 추출 ----------
+        stem = xml_path.stem                 # "Mob.0100100.img"
+        parts = stem.split(".")              # ["Mob","0100100","img"]
+        if len(parts) >= 2:
+            mob_id = parts[1]               # "0100100"
+        else:
+            mob_id = stem                    # 혹시 예외적 파일명일 경우 대비
+        # ---------------------------------------------
+
         rows.append((mob_id, info))
 
     if not rows:
-        print("[INFO] No valid XML files with <dir name='info'> were processed.")
+        print("[INFO] No valid XML files found.")
         return
 
-    # CSV 한 개로 쓰기
+    # ---------- CSV 생성 ----------
     with output_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
 
-        # 맨 앞 컬럼은 id(파일 이름), 그 뒤에 항목들
         header = ["id"] + header_keys
         writer.writerow(header)
 
         for mob_id, info in rows:
             row = [mob_id]
             for key in header_keys:
-                row.append(info.get(key, ""))  # 없는 항목은 빈칸
+                row.append(info.get(key, ""))
             writer.writerow(row)
 
     print(f"[OK] Saved combined CSV: {output_csv}")
 
 
 def main():
-    # 사용법:
-    #   python xml_info_to_csv_batch.py
-    #       -> 현재 폴더의 *.xml 전체를 모아서 mob_info_all.csv 생성
-    #
-    #   python xml_info_to_csv_batch.py path/to/folder
-    #       -> 지정 폴더의 *.xml 전체를 모아서 그 폴더에 mob_info_all.csv 생성
-    #
-    #   python xml_info_to_csv_batch.py path/to/file.xml
-    #       -> 그 파일이 있는 폴더 기준으로 mob_info_all.csv 생성
     if len(sys.argv) >= 2:
         target = Path(sys.argv[1])
     else:
