@@ -9,6 +9,10 @@ on:
       - ".github/workflows/xml_to_csv.yml"
   workflow_dispatch:
 
+# 이게 있어야 Actions가 레포에 commit/push 할 수 있음
+permissions:
+  contents: write
+
 jobs:
   convert:
     runs-on: ubuntu-latest
@@ -16,24 +20,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      # 필요하면 패키지 설치, 지금 스크립트는 표준 라이브러리만 쓰니까 사실 이 단계 없어도 됨
-      - name: Install dependencies
-        run: |
-          echo "No extra dependencies required."
-
       - name: Run XML to CSV batch script
         run: |
           python xml_info_to_csv_batch.py
 
-      - name: Upload CSV results
-        uses: actions/upload-artifact@v4
-        with:
-          name: converted-csv-files
-          path: "*.csv"
-          if-no-files-found: warn
+      - name: Move CSV files into output folder
+        run: |
+          mkdir -p output-csv
+          mv ./*.csv output-csv/ || echo "No CSV files to move"
+
+      - name: Commit and push CSV files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 변경된 CSV가 없으면 커밋 안 함
+          git add output-csv/*.csv || echo "Nothing to add"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate CSV files from XML [skip ci]"
+            git push
+          fi
