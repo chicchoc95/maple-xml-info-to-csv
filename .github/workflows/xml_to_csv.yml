@@ -1,0 +1,37 @@
+name: XML to CSV Batch Converter
+
+on:
+  push:
+    paths:
+      - "*.xml"
+      - "xmls/*.xml"
+      - "scripts/**"
+      - ".github/workflows/xml_to_csv.yml"
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install lxml
+
+      - name: Run XML to CSV batch script
+        run: |
+          python xml_info_to_csv_batch.py
+
+      - name: Upload CSV results
+        uses: actions/upload-artifact@v3
+        with:
+          name: converted-csv-files
+          path: "*.csv"
