@@ -1,0 +1,2 @@
+bodyAttack,level,maxHP,maxMP,speed,PADamage,PDDamage,MADamage,MDDamage,acc,eva,exp,undead,pushed,fs,summonType,mobType
+1,2,15,15,-50,17,0,0,0,20,0,4,0,1,10,1,0
