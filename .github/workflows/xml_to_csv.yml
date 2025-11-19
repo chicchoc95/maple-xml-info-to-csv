@@ -5,7 +5,7 @@ on:
     paths:
       - "*.xml"
       - "xmls/*.xml"
-      - "scripts/**"
+      - "xml_info_to_csv_batch.py"
       - ".github/workflows/xml_to_csv.yml"
   workflow_dispatch:
 
@@ -15,23 +15,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
+      # 필요하면 패키지 설치, 지금 스크립트는 표준 라이브러리만 쓰니까 사실 이 단계 없어도 됨
       - name: Install dependencies
         run: |
-          pip install lxml
+          echo "No extra dependencies required."
 
       - name: Run XML to CSV batch script
         run: |
           python xml_info_to_csv_batch.py
 
       - name: Upload CSV results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: converted-csv-files
           path: "*.csv"
+          if-no-files-found: warn
