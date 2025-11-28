@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="6130103.img">
+  <dir name="info">
+    <int32 name="bodyAttack" value="1" />
+    <int32 name="level" value="60" />
+    <int32 name="maxHP" value="7200" />
+    <int32 name="maxMP" value="100" />
+    <int32 name="speed" value="60" />
+    <int32 name="PADamage" value="167" />
+    <int32 name="PDDamage" value="210" />
+    <int32 name="MADamage" value="0" />
+    <int32 name="MDDamage" value="225" />
+    <int32 name="acc" value="200" />
+    <int32 name="eva" value="30" />
+    <int32 name="exp" value="220" />
+    <int32 name="undead" value="0" />
+    <int32 name="pushed" value="1000" />
+    <string name="elemAttr" value="I2F3" />
+    <string name="link" value="6130102" />
+    <single name="fs" value="10" />
+    <int32 name="summonType" value="1" />
+    <dir name="default">
+      <png name="0" width="63" height="56" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAD8AAAA4CAYAAABKWiBnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVGhD7ZnZceMwEESVwqbgFJSCU3AKm4JTcAqKxSk4BabgFGj2LAZutgYED5A6arvqlSAcg3nYj3WVTjPTJ6ZSW3/Y9H2XHyCS5PWni8k5+J7w6NrDJ5RjMO/I3ENHRbJcje7y+A+QZXhsIOdT//Ui8wnIP9UDjBjES/IuTvIlHiImwoKQdngeqPzre2ec379GYI2424yEVJbhfTjn4ow+wiM8xEgMlKQB9r99dJnoEUDlIe4qV5IM1h0WX/MAINW6i1ij+CwRCTMqHXGPD5CbyzKX7/7jszcwNkiUYbm53MsD5IayUBLP0sxGaebWD9Cf/37mZlhsb3HA8rd4gJE8YMESvH8rt3oAE1d5sFYYNZVoH3MzeRA1tBSvFaV2j8of8QCptXpzNbhWKV33b190PpIHqa9dktr6Dea0Mcw5uuaUanHuUt4/tTmMba07Z3yO9/lenAcan9f6TiTNpPuaJ7X32yDmXKb/fh+JO/xnLkvgO2BZrqv7nUiYSWebJ2wOnyaOBA+gf+erjNdidI8TySqpRtNwYRujGYxNEtIVcZcv/Vc5B5Ys8fJ28T6bxQpzE5irySpWJ8kvfQAWLDLU3F0eYC4SZLCHYXGHa5aIJPFpNXlu4BB5gPkpYW+ohtZ1shhD57wvn4e4k3poErsgahBrjDYXwXtAVDdLMXLOatHa4fJ+OfYopfg6i3CtENrrWA1aZ/mWD5AvKYmvCc5x7UmmxNP6bvLAL2J5zG8N1w4RcXB1Zphj6d3kHcy1SlTfEGnH9mNMe1j+z+uHfQ5sTtgc5lrm6o4kFWF7MaZ9u8nnC1NjGLeO/+nsMlNE+/aQz8XzeEf5uQ+ge1R8P/k0bp0peZdjyWgd883l9UKMW8fl9QFcjMF6NOfizeS5+FHy/gAsp2CdYfGnl1fZCNQYWJ18GcZHytceIJJVcH5gU7zIbvKROMA9kTiIZJXUd5PYpS6P5lpEhRW/V4lkFZxF4y0yuhzf0dyWqGiE3utEsgrOovEWGV2O797gmrDgFHoviEQjcBaNt4gV5CYwx43WwnuXgHv4XpUsgXNovEVy0ZL8XuCe//ILxB2cRfNbMyp6qwfgHuaCs4nVuSp6tLzevxTUIBZFD4+IGm4J7oiE1kK9TyZvtF9ngp+neA+Imp+idJ7nIoEW8B0Do/zKBr/HMaUfL+agd/Ba1PAauOYM0r/0BCwcgRqlJlS4VNv3R7UY3ldgUYoNzQU1tDmt6UTnFa9RoGlGxaNmFD2jRGdqSI2bRRspMZVof42Dczr9AHOoqOWYP93WAAAAAElFTkSuQmCC">
+        <vector name="origin" value="31, 55" />
+        <vector name="lt" value="-29, -52" />
+        <vector name="rb" value="30, 0" />
+        <vector name="head" value="-16, -42" />
+        <int32 name="delay" value="500" />
+      </png>
+    </dir>
+  </dir>
+</dir>

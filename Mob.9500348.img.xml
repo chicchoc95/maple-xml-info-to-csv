@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="9500348.img">
+  <dir name="info">
+    <int32 name="bodyAttack" value="1" />
+    <int32 name="level" value="70" />
+    <int32 name="maxHP" value="89000" />
+    <int32 name="maxMP" value="200" />
+    <int32 name="speed" value="-40" />
+    <int32 name="PADamage" value="260" />
+    <int32 name="PDDamage" value="280" />
+    <int32 name="MADamage" value="310" />
+    <int32 name="MDDamage" value="265" />
+    <int32 name="acc" value="130" />
+    <int32 name="eva" value="25" />
+    <int32 name="exp" value="1300" />
+    <int32 name="undead" value="0" />
+    <int32 name="pushed" value="1500" />
+    <int32 name="hpRecovery" value="1900" />
+    <int32 name="mpRecovery" value="10" />
+    <int32 name="boss" value="1" />
+    <single name="fs" value="10" />
+    <int32 name="summonType" value="1" />
+    <int32 name="hpTagColor" value="1" />
+    <int32 name="hpTagBgcolor" value="5" />
+    <int32 name="HPgaugeHide" value="1" />
+    <int32 name="firstAttack" value="1" />
+    <dir name="skill">
+      <dir name="0">
+        <int32 name="skill" value="114" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="15" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="1">
+        <int32 name="skill" value="121" />
+        <int32 name="action" value="2" />
+        <int32 name="level" value="7" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="2">
+        <int32 name="skill" value="122" />
+        <int32 name="action" value="2" />
+        <int32 name="level" value="10" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="3">
+        <int32 name="skill" value="123" />
+        <int32 name="action" value="2" />
+        <int32 name="level" value="7" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+    </dir>
+    <int32 name="mobType" value="0" />
+    <string name="link" value="7220001" />
+    <int32 name="ignoreFieldOut" value="1" />
+  </dir>
+</dir>

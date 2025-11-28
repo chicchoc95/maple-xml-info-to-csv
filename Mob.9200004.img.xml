@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="9200004.img">
+  <dir name="info">
+    <int32 name="bodyAttack" value="1" />
+    <int32 name="level" value="15" />
+    <int32 name="maxHP" value="250" />
+    <int32 name="maxMP" value="25" />
+    <int32 name="speed" value="-20" />
+    <int32 name="PADamage" value="82" />
+    <int32 name="PDDamage" value="12" />
+    <int32 name="MADamage" value="0" />
+    <int32 name="MDDamage" value="40" />
+    <int32 name="acc" value="45" />
+    <int32 name="eva" value="5" />
+    <int32 name="exp" value="26" />
+    <int32 name="undead" value="0" />
+    <int32 name="pushed" value="1" />
+    <string name="elemAttr" value="S1" />
+    <string name="link" value="1110100" />
+    <single name="fs" value="10" />
+    <int32 name="summonType" value="1" />
+    <int32 name="mobType" value="4" />
+  </dir>
+</dir>

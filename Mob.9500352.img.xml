@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="9500352.img">
+  <dir name="info">
+    <int32 name="bodyAttack" value="1" />
+    <int32 name="level" value="77" />
+    <int32 name="maxHP" value="108000" />
+    <int32 name="maxMP" value="520" />
+    <int32 name="speed" value="-30" />
+    <int32 name="PADamage" value="320" />
+    <int32 name="PDDamage" value="520" />
+    <int32 name="MADamage" value="350" />
+    <int32 name="MDDamage" value="410" />
+    <int32 name="acc" value="160" />
+    <int32 name="eva" value="27" />
+    <int32 name="exp" value="2280" />
+    <int32 name="undead" value="0" />
+    <int32 name="pushed" value="2500" />
+    <int32 name="hpRecovery" value="2700" />
+    <int32 name="mpRecovery" value="10" />
+    <int32 name="boss" value="1" />
+    <single name="fs" value="10" />
+    <int32 name="summonType" value="1" />
+    <int32 name="hpTagColor" value="1" />
+    <int32 name="hpTagBgcolor" value="5" />
+    <int32 name="HPgaugeHide" value="1" />
+    <int32 name="firstAttack" value="1" />
+    <string name="link" value="7220002" />
+    <dir name="skill">
+      <dir name="0">
+        <int32 name="skill" value="114" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="15" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="1">
+        <int32 name="skill" value="110" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="1" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="2">
+        <int32 name="skill" value="112" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="1" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="3">
+        <int32 name="skill" value="113" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="1" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+      <dir name="4">
+        <int32 name="skill" value="140" />
+        <int32 name="action" value="1" />
+        <int32 name="level" value="4" />
+        <int32 name="effectAfter" value="0" />
+      </dir>
+    </dir>
+    <int32 name="ignoreFieldOut" value="1" />
+  </dir>
+</dir>

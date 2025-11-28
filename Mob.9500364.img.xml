@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="9500364.img">
+  <dir name="info">
+    <int32 name="bodyattack" value="0" />
+    <int32 name="level" value="10" />
+    <int32 name="maxHP" value="20" />
+    <int32 name="maxMP" value="10" />
+    <int32 name="speed" value="0" />
+    <int32 name="PADamage" value="10" />
+    <int32 name="MADamage" value="10" />
+    <int32 name="PDDamage" value="10" />
+    <int32 name="MDDamage" value="10" />
+    <int32 name="acc" value="1" />
+    <int32 name="eva" value="1" />
+    <int32 name="exp" value="0" />
+    <int32 name="pushed" value="10" />
+    <int32 name="fs" value="10" />
+    <int32 name="boss" value="1" />
+    <int32 name="removeAfter" value="1800" />
+    <int32 name="hideHP" value="1" />
+    <dir name="revive">
+      <int32 name="0" value="9500365" />
+    </dir>
+  </dir>
+  <dir name="stand">
+    <png name="0" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYBAEAAAWABJnFC3KAAAAAElFTkSuQmCC">
+      <vector name="origin" value="0, 0" />
+      <vector name="head" value="0, -4000" />
+      <int32 name="delay" value="1000" />
+    </png>
+  </dir>
+  <dir name="hit1">
+    <png name="0" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYBAEAAAWABJnFC3KAAAAAElFTkSuQmCC">
+      <vector name="head" value="0, -4000" />
+      <vector name="origin" value="0, 0" />
+      <int32 name="delay" value="1000" />
+    </png>
+  </dir>
+  <dir name="die1">
+    <png name="0" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYBAEAAAWABJnFC3KAAAAAElFTkSuQmCC">
+      <vector name="origin" value="0, 0" />
+      <int32 name="delay" value="1000" />
+    </png>
+  </dir>
+</dir>

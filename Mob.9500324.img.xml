@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="9500324.img">
+  <dir name="info">
+    <int32 name="boss" value="1" />
+    <int32 name="bodyAttack" value="1" />
+    <int32 name="level" value="70" />
+    <int32 name="maxHP" value="5000000" />
+    <int32 name="maxMP" value="1" />
+    <int32 name="speed" value="5" />
+    <int32 name="PADamage" value="1" />
+    <int32 name="PDDamage" value="1" />
+    <int32 name="MADamage" value="1" />
+    <int32 name="MDDamage" value="1" />
+    <int32 name="acc" value="999" />
+    <int32 name="eva" value="999" />
+    <int32 name="exp" value="0" />
+    <int32 name="pushed" value="1000" />
+    <single name="fs" value="10" />
+    <int32 name="summonType" value="0" />
+    <string name="link" value="9500323" />
+    <int32 name="removeAfter" value="5" />
+    <dir name="ban">
+      <int32 name="banType" value="1" />
+      <string name="banMsg" value="고양이에게 들켜 치즈 창고에서 쫓겨납니다." />
+      <dir name="banMap">
+        <dir name="0">
+          <int32 name="field" value="926120410" />
+          <string name="portal" value="st00" />
+        </dir>
+      </dir>
+    </dir>
+  </dir>
+</dir>
